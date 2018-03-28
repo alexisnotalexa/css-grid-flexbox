@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>CSS-Grid + Flexbox | Alexis Okamura</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <h1>CSS-GRID + FLEXBOX</h1>
     <div class="grid">
+      <div class="base flexbox"><h3>css-grid</h3></div>
+      <div class="base flexbox"><h3>flexbox</h3></div>
+
       <div class="css-grid base">
         <div class="gray item1">1</div>
         <div class="gray">2</div>
@@ -16,15 +19,36 @@
         <div class="gray">5</div>
         <div class="gray">6</div>
       </div>
-      <div class="flex-box base">
-        <div class="gray">1</div>
-        <div class="gray">2</div>
-        <div class="gray">3</div>
-        <div class="gray">4</div>
-        <div class="gray">5</div>
-        <div class="gray">6</div>
+
+      <div class="flexbox base">
+        <div class="row">
+          <div class="gray item-1">1</div>
+          <div class="gray fixed">2</div>
+        </div>
+        <div class="row">
+          <div class="gray item-3">3</div>
+          <div class="col">
+            <div class="gray item-4">4</div>
+            <div class="row">
+              <div class="gray fixed">5</div>
+              <div class="gray fixed">6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="base flexbox">
+        <span>HTML: 7 lines</span>
+        <span>CSS: 9 lines</span>
+      </div>
+      <div class="base flexbox">
+        <span>HTML: 15 lines</span>
+        <span>CSS: 18 lines</span>
       </div>
     </div>
+    <footer>
+      <span>Made with love by, <a href="https://github.com/alexisnotalexa">@alexisnotalexa.</a></span>
+    </footer>
   </div>
 </body>
 </html>

@@ -40,7 +40,7 @@ h3, span {
 .grid {
   display: grid;
   grid-template-columns: 400px 400px;
-  grid-template-rows: 100%;
+  grid-template-rows: 40px 100% 100%;
 }
 
 .base {
@@ -56,19 +56,27 @@ h3, span {
   justify-content: center;
 }
 
-.item1 {
-  grid-column: 1 / 3;
-}
-
-.item3 {
-  grid-row: 2 / 4;
-}
-
-.item4 {
-  grid-column: 2 / 4;
-}
+.item1 { grid-column: 1 / 3; }
+.item3 { grid-row: 2 / 4; }
+.item4 { grid-column: 2 / 4; }
 
 .flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-1 { width: 184px; }
+.item-3 { width: 84px; }
+.item-4 { height: 84px; }
+
+.fixed {
+  height: 84px;
+  width: 84px;
+}
+
+.row {
   display: flex;
 }
 
