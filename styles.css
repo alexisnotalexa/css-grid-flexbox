@@ -8,6 +8,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a, a:link, a:visited,
+a:active {
+  color: black;
+}
+
 h1 {
   font-weight: 700;
   margin-bottom: 0;
@@ -16,6 +21,13 @@ h1 {
 h3 {
   text-transform: uppercase;
   font-weight: 400;
+}
+
+footer {
+  margin: 1rem;
+}
+
+h3, span {
   font-size: 13px;
 }
 
